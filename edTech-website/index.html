@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>EasyLearn</title>
-    <!-- stylesheet Link -->
-    <link rel="stylesheet" href="stylesheet " />
+    <title>Bootstrap demo</title>
     <!-- Bootstrap's Link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -14,11 +12,7 @@
       crossorigin="anonymous"
     />
     <!-- Favicon Link     -->
-    <link
-      rel="shortcut icon"
-      href="images/Logo/easytech.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="images/register.png" type="image/x-icon" />
     <!-- Font Aswesome Link -->
     <script
       src="https://kit.fontawesome.com/3180a89ad8.js"
@@ -27,51 +21,66 @@
   </head>
 
   <body>
-    <!-- Bootstrap's JS Link -->
-    <div class="container">
-      <header
-        class="d-flex flex-wrap align-items-center justify-content-between border-bottom"
-      >
-        <div class="col-md-3 mb-2 mb-md-0">
-          <a
-            href="/"
-            class="d-inline-flex link-body-emphasis text-decoration-none"
-          >
-            <img src="images/Logo/easytech.png" alt="" />
+    <!--? Header Section  -->
+    <header>
+      <!-- navbar section -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container my-3 ms-auto">
+          <a class="navbar-brand" href="#" style="color: #4a4a4a"
+            >Digital<span class="text-primary">TEC</span>
           </a>
-        </div>
+          <button
+            class="navbar-toggler border border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="icons/open-menu.png" alt="" style="height: 30px" />
+            <!-- <span><i class="fa fa-bars"></i></span> -->
+          </button>
 
-        <ul class="nav col-12 col-md-auto justify-content-center mb-2 mb-md-0">
-          <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-          <li><a href="#" class="nav-link px-2">Features</a></li>
-          <li><a href="#" class="nav-link px-2">Pricing</a></li>
-          <li><a href="#" class="nav-link px-2">FAQs</a></li>
-          <li><a href="#" class="nav-link px-2">About</a></li>
-        </ul>
-
-        <div class="d-flex col-md-4 align-items-center justify-content-end">
-          <form class="text-success-emphasis me-2 mb-2 mb-md-0" role="search">
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Search..."
-              aria-label="Search"
-            />
-          </form>
-
-          <div class="d-flex align-items-center">
-            <button type="button" class="btn btn-outline-primary me-2">
-              Login
-            </button>
-            <button type="button" class="btn btn-primary">Sign-up</button>
+          <div
+            class="collapse navbar-collapse my-nav justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link active" aria-current="page" href="#courses"
+                  >Courses</a
+                >
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link active" href="#">Deals</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link active" href="#success">Success</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link active" href="#">About</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link active" href="#register">Register</a>
+              </li>
+            </ul>
           </div>
-        </div>
-      </header>
-    </div>
 
-    <!-- !................................
-  !.........................................
-  !................................................ -->
+          <button
+            type="button"
+            class="btn register-btn d-none d-sm-none d-md-none d-lg-block px-4"
+          >
+            Register
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Bootstrap's JS Link -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
