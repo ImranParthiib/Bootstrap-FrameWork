@@ -1,0 +1,8 @@
+main{
+  margin: 20px 80px 110px 80px;
+}
+.carousel .carousel-inner .carousel-item img {
+  height: 87vh ;
+  border-radius: 10px;
+  width: 100%;
+}

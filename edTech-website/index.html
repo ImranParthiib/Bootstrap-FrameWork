@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>EasyTech</title>
     <!-- Bootstrap's Link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -11,6 +11,8 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- Link Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
     <!-- Favicon Link     -->
     <link rel="shortcut icon" href="images/register.png" type="image/x-icon" />
     <!-- Font Aswesome Link -->
@@ -22,12 +24,12 @@
 
   <body>
     <!--? Header Section  -->
-    <header>
+    <header class="bg-primary">
       <!-- navbar section -->
       <nav class="navbar navbar-expand-lg">
-        <div class="container my-3 ms-auto">
-          <a class="navbar-brand" href="#" style="color: #4a4a4a"
-            >Digital<span class="text-primary">TEC</span>
+        <div class="container ms-auto">
+          <a class="navbar-brand" href="#"
+            >EASY<span class="text-warning">TECh</span>
           </a>
           <button
             class="navbar-toggler border border-0"
@@ -39,7 +41,7 @@
             aria-label="Toggle navigation"
           >
             <img src="icons/open-menu.png" alt="" style="height: 30px" />
-            <!-- <span><i class="fa fa-bars"></i></span> -->
+            <span><i class="fa fa-bars"></i></span>
           </button>
 
           <div
@@ -79,6 +81,377 @@
         </div>
       </nav>
     </header>
+    <!--? Header Section End -->
+    <main>
+      <!--! Slider -->
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide pt-3"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner col-12">
+          <div class="carousel-item active">
+            <img
+              src="images/cover/cover-1.png"
+              class="d-block col-10 m-auto carousel-image"
+              alt="..."
+            />
+            <div
+              class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100"
+            >
+              <h2>Get Started Digital Learning</h2>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/cover/cover-2.jpg"
+              class="d-block col-10 m-auto carousel-image"
+              alt="..."
+            />
+            <div
+              class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100"
+            >
+              <h2>Get Started Digital Learning</h2>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/cover/cover-3.jpg"
+              class="d-block col-10 m-auto carousel-image"
+              alt="..."
+            />
+            <div
+              class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100"
+            >
+              <h2>Get Started Digital Learning</h2>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- ?Discover Popular Courses -->
+      <section
+        class="pt-5 d-flex flex-column align-items-center justify-content-center text-center"
+      >
+        <h1>Discover Our Popular Courses</h1>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout.
+        </p>
+      </section>
+      <!-- ?Courses -->
+      <section id="courses" class="pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
+              <div class="card d-flex flex-row">
+                <img
+                  src="/images/course/course-1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
+              <div class="card d-flex flex-row">
+                <img
+                  src="/images/course/course-1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
+              <div class="card d-flex flex-row">
+                <img
+                  src="/images/course/course-1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
+              <div class="card d-flex flex-row">
+                <img
+                  src="/images/course/course-1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
+              <div class="card d-flex flex-row">
+                <img
+                  src="/images/course/course-1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
+              <div class="card d-flex flex-row">
+                <img
+                  src="/images/course/course-1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center pt-5">
+          <button class="btn btn-primary">See More Courses</button>
+        </div>
+      </section>
+
+      <!-- ?Success -->
+      <section id="success" class="pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img
+                src="/images/working.png"
+                class="img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <h1>Our Success Stories</h1>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ?Register -->
+      <section id="register" class="pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <h1>Register Now</h1>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+              <form action="">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="course" class="form-label">Course</label>
+                  <select class="form-select" id="course">
+                    <option selected>Select Course</option>
+                    <option value="1">Web Development</option>
+                    <option value="2">Graphic Design</option>
+                    <option value="3">Digital Marketing</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img src="images/register.png" class="img-fluid" alt="..." />
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      <!-- Students Feedback -->
+      <section id="feedback" class="pt-5">
+        <div class="container">
+          <div class="row">
+        <div class="col-lg-12">
+          <h1>Students Feedback</h1>
+        </div>
+          </div>
+          <div class="row">
+        <div class="col-lg-12">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="3000" <!-- Set the interval to 3 seconds -->
+          >
+            <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card">
+              <div class="card-body">
+            <h5 class="card-title">John Doe</h5>
+            <p class="card-text">
+              "I really enjoyed the web development course. The
+              instructors were knowledgeable and the course material
+              was well-structured."
+            </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="card-body">
+            <h5 class="card-title">Jane Smith</h5>
+            <p class="card-text">
+              "The graphic design course exceeded my expectations.
+              The hands-on projects helped me improve my skills
+              significantly."
+            </p>
+              </div>
+            </div>
+          </div>
+            </div>
+            <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+            >
+          <span
+            class="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+            >
+          <span
+            class="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
 
     <!-- Bootstrap's JS Link -->
     <script
