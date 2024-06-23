@@ -1,11 +1,15 @@
 main {
   margin: 20px 100px 110px 100px;
 }
-.carousel .carousel-inner .carousel-item img {
-  height: 87vh;
-  border-radius: 10px;
+
+.contact {
   width: 100%;
 }
-.contact{
-  width: 100%;
+.comma {
+  width: 50px !important;
+  height: 50px !important;
+}
+.user {
+  width: 50px !important;
+  height: 50px !important;
 }
