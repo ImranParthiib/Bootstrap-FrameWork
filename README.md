@@ -39,7 +39,7 @@ To get a local copy up and running, follow these simple steps:
 
 Once the project is set up, you can start exploring the different sections of the website:
 
-- Home: Introduction to EasyTech and digital learning.
+- Home: This section is a slider giving an overview of our approach.
 - Courses: Browse through the popular courses.
 - Success Stories: Learn about the success stories of our students.
 - Register: Sign up for a course using the registration form.
@@ -51,7 +51,7 @@ Once the project is set up, you can start exploring the different sections of th
 - CSS: Styles the website and makes it visually appealing.
 - Bootstrap: Ensures the website is responsive and includes pre-designed components for ease of use.
 - Font Awesome: Adds icons to the website.
-- JavaScript: Handles the interactive elements like the carousel.
+- JavaScript: Js is not used yet
 
 ## License
 
