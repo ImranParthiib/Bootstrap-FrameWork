@@ -34,4 +34,23 @@ main {
     height: 500px;
     border-radius: 10px;
   }
+
+  .navbar-nav {
+    background-color: rgba(66, 129, 45, 0.583);
+    width: 25%;
+    border-radius: 10px;
+  }
+  .nav-item a {
+    color: rgb(255, 255, 255);
+  }
+  .nav-item:hover {
+    background-color: #88b6e5 !important;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  .nav-item a:hover {
+    background-color: #f8f9fa !important;
+    color: red !important;
+    border-radius: 10px;
+  }
 }

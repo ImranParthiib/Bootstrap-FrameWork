@@ -32,28 +32,31 @@
         </button>
 
         <div class="collapse navbar-collapse my-nav justify-content-center" id="navbarNav">
-          <ul class="navbar-nav fs-5">
-            <li class="nav-item mx-lg-3">
+          <ul class="navbar-nav fs-5 hover:bg-danger pt-2 text-center">
+           <li class="nav-item mx-lg-3 d-block d-md-none">
+    <a class="nav-link active rounded text-info" aria-current="page" href="#register">Register</a>
+</li>
+            <li class="nav-item mx-lg-3 ">
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item mx-lg-3">
-              <a class="nav-link active" aria-current="page" href="#courses">Courses</a>
+              <a class="nav-link  " aria-current="page" href="#courses">Courses</a>
             </li>
             <li class="nav-item mx-lg-3">
-              <a class="nav-link active" href="#">Deals</a>
+              <a class="nav-link  " href="#success">Success</a>
             </li>
             <li class="nav-item mx-lg-3">
-              <a class="nav-link active" href="#success">Success</a>
+              <a class="nav-link  " href="#faq">FAQ</a>
             </li>
             <li class="nav-item mx-lg-3">
-              <a class="nav-link active" href="#">About</a>
+              <a class="nav-link " href="#about">About</a>
             </li>
           </ul>
         </div>
 
-        <button type="button" class=" fs-5 btn register-btn d-none  d-lg-block px-3 bg-danger text-white">
-          Register
-        </button>
+        <a href="#join" class="btn btn-danger fs-5 d-none d-lg-block px-3 text-white" role="button">
+    Register
+</a>
       </div>
     </nav>
   </header>
@@ -258,7 +261,7 @@
 </section>
 
     <!-- ?Ready to Join -->
-    <section class="bg-primary text-white d-flex flex-column flex-md-row justify-content-evenly align-items-center m-auto mt-5 rounded p-5 ms-5 me-5">
+    <section id="join" class="bg-primary text-white d-flex flex-column flex-md-row justify-content-evenly align-items-center m-auto mt-5 rounded p-5 ms-5 me-5">
   <div class="p-3 text-center text-md-start">
     <h1>Ready to join?</h1>
     <p>
@@ -268,8 +271,11 @@
     </p>
   </div>
   <div class="text-center mt-3 mt-md-0">
-    <button class="btn btn-light">Register Now</button>
+   <a href="#register" class="btn btn-light fs-5 register-btn d-none d-lg-block px-3 text-dark" role="button">
+    Register
+</a>
   </div>
+  
 </section>
 
     <!-- ?Meet Our Successfull Students -->
@@ -463,7 +469,7 @@
         <div class="row">
           <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pb-5 pt-5">
             <h1>Frequently Asked Questions</h1>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+            <p class="fs-5">It is a long established fact that a reader will be distracted by the readable content of a page when
               looking at its layout.</p>
           </div>
         </div>
@@ -474,14 +480,15 @@
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button fs-4" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    What is the duration of the courses?
+                    Does my site need to be updated to HTTPS instead of HTTP?
                   </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body text-success fs-5">
-                    The duration of the courses varies depending on the
-                    subject. Most courses are between 4-6 weeks long.
+                    Yes!
+
+In 2018, there is no reason – no good excuse – not to upgrade any site to HTTPS by acquiring an SSL certificate. Starting in August 2018, the most popular web browser on the planet, Google Chrome, will give a big red warning to your visitors if your site is not fully secure. Firefox is already doing this, and Microsoft’s Edge and Apple’s Safari are sure to follow. So make sure you get an SSL certificate and keep it up to date. This will protect your content from being covertly altered and prevent your customers’ information from being monitored or stolen.
                   </div>
                 </div>
               </div>
@@ -489,14 +496,13 @@
                 <h2 class="accordion-header" id="headingTwo">
                   <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    What is the cost of the courses?
+                    How long does a website redesign take?
                   </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body text-success fs-5">
-                    The cost of the courses varies depending on the subject.
-                    Most courses are between $20-$50.
+                    Depending on the size, complexity and, most critically, the client’s active involvement in the process, a website takes anywhere between six and 24 weeks to build and launch. Some incredibly large projects have broken the year mark
                   </div>
                 </div>
               </div>
@@ -504,15 +510,13 @@
                 <h2 class="accordion-header" id="headingThree">
                   <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Are there any prerequisites for the courses?
+                    What happens if my site breaks?
                   </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body text-success fs-5">
-                    There are no prerequisites for most of the courses. Some
-                    advanced courses may require prior knowledge of the
-                    subject.
+                    We’re always here to help! We can cover emergencies and non-emergencies alike. Just be sure to give us as many details as possible about the problem: the browser you were using when you noticed the problem, your computer’s operating system, time of day, what actions you were performing, what device you were using when you saw the problem, etc.
                   </div>
                 </div>
               </div>
@@ -520,14 +524,13 @@
                 <h2 class="accordion-header" id="headingFour">
                   <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Can I get a refund if I'm not satisfied with the course?
+                   How much does a new website cost?
                   </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body text-success fs-5">
-                    Yes, we offer a 30-day money-back guarantee if you are not satisfied with the course. Please contact
-                    our support team for assistance.
+                    Do you think it’s possible to calculate the exact cost for website development? Website development will be fully customizable, tailoring to the client’s requirements. Nowadays, you can find many options to develop your website.
                   </div>
                 </div>
               </div>
@@ -605,14 +608,16 @@
   <!-- ?EasyTech Footer -->
   <footer class="bg-dark text-white p-5">
     <div class="text-center">
-      <h1 class="text-danger">Pro Edu</h1>
+      <a class="navbar-brand" href="#"></a>
+        <span class="fs-4" style="font-family: 'Pacifico', cursive;">EASY <strong class="text-warning fs-4"
+            style="font-family: 'Pacifico', cursive;">Tech</strong></span </a>
       <p class="text-primary fs-5">Office 41, Zawaya Building, Ghala Muscat, Sultanate of Oman<br>Privacy Policy | Terms
         of Use</p>
     </div>
     <div class="d-flex justify-content-center fs-2">
-      <a href="#"><i class="fab fa-facebook text-warning"></i></a>
-      <a href="#"><i class="fab fa-twitter ps-4 text-warning"></i></a>
-      <a href="#"><i class="fab fa-instagram ps-4 text-warning"></i></a>
+      <a href="#"><i class="fab fa-facebook text-white"></i></a>
+      <a href="#"><i class="fab fa-twitter ps-4 text-white"></i></a>
+      <a href="#"><i class="fab fa-instagram ps-4 text-white"></i></a>
     </div>
   </footer>
 
