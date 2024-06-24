@@ -1,5 +1,5 @@
 main {
-  margin: 20px 100px 110px 100px;
+  margin: 20px 20px 110px 10px;
 }
 
 .contact {
@@ -19,7 +19,19 @@ main {
   transform: translate(-50%, -50%);
   bottom: initial;
 }
-.carousel-item img{
+.carousel-item img {
   height: 800px;
   border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .pt-5,
+  .pb-3,
+  .pt-3 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .carousel-item img {
+    height: 500px;
+    border-radius: 10px;
+  }
 }
