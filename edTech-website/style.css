@@ -13,3 +13,13 @@ main {
   width: 50px !important;
   height: 50px !important;
 }
+.carousel-caption {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: initial;
+}
+.carousel-item img{
+  height: 800px;
+  border-radius: 10px;
+}
