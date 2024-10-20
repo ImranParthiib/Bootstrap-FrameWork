@@ -1,733 +1,641 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <title>EasyTech</title>
-    <!-- Bootstrap's Link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <!-- Link Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Favicon Link     -->
-    <link rel="shortcut icon" href="./images/Logo/download.png" type="image/x-icon" />
-    <!-- Font Aswesome Link -->
-    <script
-      src="https://kit.fontawesome.com/3180a89ad8.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <!--? Header Section  -->
-    <header class="bg-primary">
-      <!-- navbar section -->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container ms-auto">
-          <a class="navbar-brand" href="#"></a>
-            <span class="fs-4" style="font-family: 'Pacifico', cursive;">EASY <strong class="text-warning fs-4" style="font-family: 'Pacifico', cursive;">Tech</strong></span
-            
-          </a>
-          <button
-            class="navbar-toggler border border-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <img src="icons/open-menu.png" alt="" style="height: 30px" />
-            <span><i class="fa fa-bars"></i></span>
-          </button>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EasyTech</title>
+  <!-- Bootstrap's Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- Link Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Favicon Link     -->
+  <link rel="shortcut icon" href="./images/Logo/download.png" type="image/x-icon" />
+  <!-- Font Aswesome Link -->
+  <script src="https://kit.fontawesome.com/3180a89ad8.js" crossorigin="anonymous"></script>
+</head>
 
-          <div
-            class="collapse navbar-collapse my-nav justify-content-center"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav fs-5">
-              <li class="nav-item mx-lg-3">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item mx-lg-3">
-                <a class="nav-link active" aria-current="page" href="#courses"
-                  >Courses</a
-                >
-              </li>
-              <li class="nav-item mx-lg-3">
-                <a class="nav-link active" href="#">Deals</a>
-              </li>
-              <li class="nav-item mx-lg-3">
-                <a class="nav-link active" href="#success">Success</a>
-              </li>
-              <li class="nav-item mx-lg-3">
-                <a class="nav-link active" href="#">About</a>
-              </li>
-            </ul>
-          </div>
+<body>
+  <!--? Header Section  -->
+<header class="bg-primary text-white">
+  <!-- navbar section -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span class="fs-4" style="font-family: 'Pacifico', cursive">EASY
+          <strong class="text-warning fs-4" style="font-family: 'Pacifico', cursive">Tech</strong>
+        </span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav fs-5 text-center">
+          <li class="nav-item mx-lg-3">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item mx-lg-3">
+            <a class="nav-link" href="#courses">Courses</a>
+          </li>
+          <li class="nav-item mx-lg-3">
+            <a class="nav-link" href="#success">Success</a>
+          </li>
+          <li class="nav-item mx-lg-3">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item mx-lg-3">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item mx-lg-3 d-block d-md-none">
+            <a class="nav-link active rounded text-warning border bg-info w-50 m-auto" href="#register">Register</a>
+          </li>
+        </ul>
+      </div>
+      <a href="#join" class="btn btn-danger fs-5 d-none d-lg-block px-3 text-white" role="button">Register</a>
+    </div>
+  </nav>
+</header>
 
-          <button
-            type="button"
-            class=" fs-5 btn register-btn d-none  d-lg-block px-3 bg-danger text-white"
-          >
-            Register
-          </button>
-        </div>
-      </nav>
-    </header>
-    <!--? Header Section End -->
-    <main>
-      <!--! Slider -->
-      <section
-        id="home carouselExampleAutoplaying"
-        class="carousel slide pt-3"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner col-12">
-          <div class="carousel-item active">
-            <img
-              src="./images/cover/cover-1.png"
-              class="d-block col-10 m-auto carousel-image"
-              alt="..."
-            />
-            <div
-              class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100"
-            >
-              <h2 class="fs-1">Get Started Digital Learning</h2>
+
+  <!--? Header Section End -->
+  <main>
+    <!--! Slider -->
+     <section id="carouselExampleDark" class="carousel carousel-dark slide mb-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./images/cover/cover-1.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100 text-white">
+        <h2 class="fs-1">Get Started Digital Learning</h2>
               <p class="fs-5">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
               </p>
               <button class="btn btn-primary fs-5">Get Started</button>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./images/cover/cover-2.jpg"
-              class="d-block col-10 m-auto carousel-image"
-              alt="..."
-            />
-            <div
-              class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100"
-            >
-              <h2 class="fs-1">Get Started Digital Learning</h2>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./images/cover/cover-2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100 text-white">
+        <h2 class="fs-1">Get Started Digital Learning</h2>
               <p class="fs-5">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
               </p>
               <button class="btn btn-primary fs-5">Get Started</button>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./images/cover/cover-3.jpg"
-              class="d-block col-10 m-auto carousel-image"
-              alt="..."
-            />
-            <div
-              class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100"
-            >
-              <h2 class="fs-1">Get Started Digital Learning</h2>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <img src="./images/cover/cover-3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100 text-white">
+        <h2 class="fs-1">Get Started Digital Learning</h2>
               <p class="fs-5">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
               </p>
               <button class="btn btn-primary fs-5">Get Started</button>
-            </div>
+      </div>
+    </div>
+   
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+     </section>
+    <!-- ?Discover Popular Courses -->
+    <section class="pt-5 d-flex flex-column align-items-center justify-content-center text-center">
+      <h1>Discover Our Popular Courses</h1>
+      <p>
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at its layout.
+      </p>
+    </section>
+    <!-- ?Courses -->
+    <section id="courses" class="pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
+        <div class="card d-flex flex-column flex-md-row">
+          <img src="./images/course/course-1.png" class="img-fluid card-img-top card-img-md-left" alt="Course 1" />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Web Development</h5>
+            <p class="card-text fs-5">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </p>
+            <p>
+              <strong class="text-primary">Price : 20$</strong>
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </section>
-      <!-- ?Discover Popular Courses -->
-      <section
-        class="pt-5 d-flex flex-column align-items-center justify-content-center text-center"
-      >
-        <h1>Discover Our Popular Courses</h1>
-        <p>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout.
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
+        <div class="card d-flex flex-column flex-md-row">
+          <img src="./images/course/course-2.png" class="img-fluid card-img-top card-img-md-left" alt="Course 2" />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Web Development</h5>
+            <p class="card-text fs-5">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </p>
+            <p>
+              <strong class="text-primary">Price : 20$</strong>
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
+        <div class="card d-flex flex-column flex-md-row">
+          <img src="./images/course/course-3.png" class="img-fluid card-img-top card-img-md-left" alt="Course 3" />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Web Development</h5>
+            <p class="card-text fs-5">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </p>
+            <p>
+              <strong class="text-primary">Price : 20$</strong>
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
+        <div class="card d-flex flex-column flex-md-row">
+          <img src="./images/course/course-1.png" class="img-fluid card-img-top card-img-md-left" alt="Course 1" />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Web Development</h5>
+            <p class="card-text fs-5">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </p>
+            <p>
+              <strong class="text-primary">Price : 20$</strong>
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
+        <div class="card d-flex flex-column flex-md-row">
+          <img src="./images/course/course-1.png" class="img-fluid card-img-top card-img-md-left" alt="Course 1" />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Web Development</h5>
+            <p class="card-text fs-5">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </p>
+            <p>
+              <strong class="text-primary">Price : 20$</strong>
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
+        <div class="card d-flex flex-column flex-md-row">
+          <img src="./images/course/course-1.png" class="img-fluid card-img-top card-img-md-left" alt="Course 1" />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Web Development</h5>
+            <p class="card-text fs-5">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </p>
+            <p>
+              <strong class="text-primary">Price : 20$</strong>
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center align-items-center pt-5">
+    <button class="btn btn-primary fs-5">See More Courses</button>
+  </div>
+     </section>
+
+    <!-- ?Explore The elearning Institute -->
+    <section id="success" class="pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <img src="./images/working.png" class="img-fluid rounded mb-4 mb-lg-0" alt="..." />
+      </div>
+      <div class="col-lg-6 col-md-12 pt-5">
+        <h1 class="pt-5 mt-5" style="font-size: 44px;">
+          Explore The elearning <br />
+          Institute
+        </h1>
+        <p class="pt-3 fs-5">
+          There are many variations of passages of Lorem Ipsum available,
+          but the majority have suffered alteration in some form, by
+          injected humour, or randomised words which don't look even
+          slightly believable. If you are going to use a passage of Lorem
+          Ipsum, you need to be sure. <br /><br />
+          Anything embarrassing hidden in the middle of text. All the
+          Lorem Ipsum generators on the Internet tend to repeat
+          predefined.
         </p>
-      </section>
-      <!-- ?Courses -->
-      <section id="courses" class="pt-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
-              <div class="card d-flex flex-row">
-                <img
-                  src="./images/course/course-1.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Web Development</h5>
-                  <p class="card-text">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                  <p>
-                    <strong class="text-primary">Price : 20$</strong>
-                  </p>
-                  <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
-              <div class="card d-flex flex-row">
-                <img
-                  src="./images/course/course-2.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Web Development</h5>
-                  <p class="card-text">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                  <p>
-                    <strong class="text-primary">Price : 20$</strong>
-                  </p>
-                  <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
-              <div class="card d-flex flex-row">
-                <img
-                  src="./images/course/course-3.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Web Development</h5>
-                  <p class="card-text">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                  <p>
-                    <strong class="text-primary">Price : 20$</strong>
-                  </p>
-                  <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
-              <div class="card d-flex flex-row">
-                <img
-                  src="./images/course/course-1.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Web Development</h5>
-                  <p class="card-text">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                  <p>
-                    <strong class="text-primary">Price : 20$</strong>
-                  </p>
-                  <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
-              <div class="card d-flex flex-row">
-                <img
-                  src="./images/course/course-1.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Web Development</h5>
-                  <p class="card-text">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                  <p>
-                    <strong class="text-primary">Price : 20$</strong>
-                  </p>
-                  <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
-              <div class="card d-flex flex-row">
-                <img
-                  src="./images/course/course-1.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Web Development</h5>
-                  <p class="card-text">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                  <p>
-                    <strong class="text-primary">Price : 20$</strong>
-                  </p>
-                  <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-              </div>
-            </div>
+        <div class="d-flex pt-3 flex-wrap">
+          <div class="d-flex flex-column pe-5">
+            <h1>3.2K+</h1>
+            <p>Online Course</p>
+          </div>
+          <div class="d-flex flex-column pe-5">
+            <h1>600+</h1>
+            <p>Expert Member</p>
+          </div>
+          <div class="d-flex flex-column">
+            <h1>1K+</h1>
+            <p>Rating & Review</p>
           </div>
         </div>
-        <div class="d-flex justify-content-center align-items-center pt-5">
-          <button class="btn btn-primary fs-5">See More Courses</button>
-        </div>
-      </section>
-      <!-- ?Explore The elearning Institute -->
-      <section id="success" class="pt-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <img
-                src="./images/working.png"
-                class="img-fluid rounded"
-                alt="..."
-              />
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
-              <h1 class="pt-5 mt-5">
-                Explore The elearning <br />
-                Institute
-              </h1>
-              <p class="pt-3 fs-5">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure. <br /><br />
-                Anything embarrassing hidden in the middle of text. All the
-                Lorem Ipsum generators on the Internet tend to repeat
-                predefined.
-              </p>
-              <div class="d-flex pt-3">
-                <div class="d-flex flex-column pe-5">
-                  <h1>3.2K+</h1>
-                  <p>Online Course</p>
-                </div>
-                <div class="d-flex flex-column pe-5">
-                  <h1>600+</h1>
-                  <p>Expert Member</p>
-                </div>
-                <div class="d-flex flex-column">
-                  <h1>1K+</h1>
-                  <p>Rating & Review</p>
-                </div>
-              </div>
-              <button class="btn btn-primary">Read More</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ?Ready to Join -->
-      <section
-        class="bg-primary text-white d-flex justify-content-evenly m-auto mt-5 rounded-pill p-5 ms-5 me-5"
-      >
-        <div class="p-3">
-          <h1>Ready to join?</h1>
-          <p>
-            It is a long established fact that a reader will be distracted by
-            the readable<br />
-            content of a page when looking at its layout.
-          </p>
-        </div>
-        <div>
-          <button class="btn btn-light mt-5">Register Now</button>
-        </div>
-      </section>
-      <!-- ?Meet Our Successfull Students -->
-       <section class="mt-5 pt-5">
-        <div class="ps-5">
-          <h1>Meet Our Successfull <br>Students</h1>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-        </div>
-        <div class="d-flex">
-          <div class="card mt-3 ms-3 w-100">
-            <img src="./images/student/student-1.png" alt="">
-            <h5 class="card-title ps-3 pt-2">Awlad Hossain</h5>
-            <p class="card-text ps-3 pb-3">UI/UX Designer</p>  
-          </div>
-          <div class="card mt-3 ms-3 w-100">
-            <img src="./images/student/student-2.png" alt="">
-            <h5 class="card-title ps-3 pt-2">Jannatul Islam</h5>
-            <p class="card-text ps-3 pb-3">Motion Design</p>  
-          </div>
-          <div class="card mt-3 ms-3 w-100">
-            <img src="./images/student/student-3.png" alt="">
-            <h5 class="card-title ps-3 pt-2">Rakib Hossain</h5>
-            <p class="card-text ps-3 pb-3">Web Developer</p> 
-          </div>
-          <div class="card mt-3 ms-3 w-100">
-            <img src="./images/student/student-4.png" alt="">
-            <h5 class="card-title ps-3 pt-2">Nishi Akter</h5>
-            <p class="card-text ps-3 pb-3">Graphic Designer</p>  
-          </div>
-          
-        </div>
-        <div class="d-flex justify-content-center align-items-center pt-5">
-          <button class="btn btn-primary fs-5">View All</button>
-        </div>
-       </section>
-     <!-- ?Students Feedback -->
-      <section id="feedback" class="feedback-section mt-5">
-        <div class="container">
-            <h1 class="text-center">Some Students Feedback</h1>
-            <p class="text-center pb-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-            <div id="feedbackCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- Page 1 -->
-                    <div class="carousel-item active">
-                        <div class="d-flex justify-content-center gap-4">
-                            <!-- Feedback 1 -->
-                            <div class="card p-4">
-                                <div class="d-flex justify-content-between pb-4">
-                                    <img class="comma" src="./images/comma.png" alt="Comma">
-                                    <div>
-                                        <i class="fas fa-star text-warning"></i>
-                                        <i class="fas fa-star text-warning"></i>
-                                       <i class="fas fa-star text-warning"></i>
-                                       <i class="fas fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-                                    </div>
-                                </div>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem.</p>
-                                <div class="d-flex pt-2 user-info">
-                                    <img class="user" src="images/student/student-6.png" alt="User" class="user-img">
-                                    <div class="ps-3">
-                                        <h6>Shanta Akter</h6>
-                                        <p>UI Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Feedback 2 -->
-                            <div class="card p-4">
-                                <div class="d-flex justify-content-between pb-4">
-                                    <img class="comma" src="./images/comma.png" alt="Comma">
-                                    <div>
-                                        <i class="fas fa-star text-warning"></i>
-                                        <i class="fas fa-star text-warning"></i>
-                                       <i class="fas fa-star text-warning"></i>
-                                       <i class="fas fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-                                    </div>
-                                </div>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem.</p>
-                                <div class="d-flex pt-2 user-info">
-                                    <img class="user" src="images/student/student-5.png" alt="User" class="user-img">
-                                    <div class="ps-3">
-                                        <h6>Awlad Hossain</h6>
-                                        <p>UI Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Page 2 -->
-                    <div class="carousel-item">
-                        <div class="d-flex justify-content-center gap-4">
-                            <!-- Feedback 3 -->
-                            <div class="card p-4">
-                                <div class="d-flex justify-content-between pb-4">
-                                    <img class="comma" src="./images/comma.png" alt="Comma">
-                                    <div>
-                                        <i class="fas fa-star text-warning"></i>
-                                        <i class="fas fa-star text-warning"></i>
-                                       <i class="fas fa-star text-warning"></i>
-                                       <i class="fas fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-                                    </div>
-                                </div>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem.</p>
-                                <div class="d-flex pt-2 user-info">
-                                    <img class="user" src="images/student/student-6.png" alt="User" class="user-img">
-                                    <div class="ps-3">
-                                        <h6>Shanta Khatun</h6>
-                                        <p>Web Developer</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Feedback 4 -->
-                            <div class="card p-4">
-                                <div class="d-flex justify-content-between pb-4">
-                                    <img class="comma" src="./images/comma.png" alt="Comma">
-                                    <div>
-                                        <i class="fas fa-star text-warning"></i>
-                                        <i class="fas fa-star text-warning"></i>
-                                       <i class="fas fa-star text-warning"></i>
-                                       <i class="fas fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-                                    </div>
-                                </div>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem.</p>
-                                <div class="d-flex pt-2 user-info">
-                                    <img class="user" src="images/student/student-5.png" alt="User" class="user-img">
-                                    <div class="ps-3">
-                                        <h6>Jane Smith</h6>
-                                        <p>Graphic Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon bg-success rounded-circle" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon bg-success rounded-circle" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-      </section>
-      <!-- ?Frequently Asked Questions -->
-      <section id="faq" class="pt-5">
-        <div class="container">
-          <div class="row">
-        <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pb-5 pt-5">
-          <h1>Frequently Asked Questions</h1>
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-        </div>
-          </div>
-          <div class="row">
-        <div class="col-lg-12">
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button
-              class="accordion-button fs-4"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
-            >
-              What is the duration of the courses?
-            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse show "
-            aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body text-success fs-5">
-              The duration of the courses varies depending on the
-              subject. Most courses are between 4-6 weeks long.
-            </div>
-          </div>
-            </div>
-            <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button
-              class="accordion-button collapsed fs-4"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              What is the cost of the courses?
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body text-success fs-5">
-              The cost of the courses varies depending on the subject.
-              Most courses are between $20-$50.
-            </div>
-          </div>
-            </div>
-            <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button
-              class="accordion-button collapsed fs-4"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              Are there any prerequisites for the courses?
-            </button>
-          </h2>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body text-success fs-5">
-              There are no prerequisites for most of the courses. Some
-              advanced courses may require prior knowledge of the
-              subject.
-            </div>
-          </div>
-            </div>
-            <div class="accordion-item">
-          <h2 class="accordion-header" id="headingFour">
-            <button
-              class="accordion-button collapsed fs-4"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseFour"
-              aria-expanded="false"
-              aria-controls="collapseFour"
-            >
-              Can I get a refund if I'm not satisfied with the course?
-            </button>
-          </h2>
-          <div
-            id="collapseFour"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingFour"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body text-success fs-5">
-              Yes, we offer a 30-day money-back guarantee if you are not satisfied with the course. Please contact our support team for assistance.
-            </div>
-          </div>
-            </div>
-          </div>
-        </div>
-          </div>
-        </div>
-      </section>
-      <!-- ?Register -->
-      <section id="register" class="pt-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <h1>Register Now</h1>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-              </p>
-              <form action="">
-                <div class="mb-3">
-                  <label for="name" class="form-label">Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="phone" class="form-label">Phone</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="phone"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="course" class="form-label">Course</label>
-                  <select class="form-select" id="course">
-                    <option selected>Select Course</option>
-                    <option value="1">Web Development</option>
-                    <option value="2">Graphic Design</option>
-                    <option value="3">Digital Marketing</option>
-                  </select>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 pt-5 ">
-              <img src="./images/contact.png" class="img-fluid contact" alt="..." />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ?Trusted by over 800+ companies -->
-      <section class="pt-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pb-3 pt-3">
-              <h1>Trusted by over 800+ companies</h1>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="d-flex justify-content-evenly align-items-center">
-                <img src="./images/company/company-1.png" alt="" />
-                <img src="./images/company/company-2.png" alt="" />
-                <img src="./images/company/company-3.png" alt="" />
-                <img src="./images/company/company-4.png" alt="" />
-                <img src="./images/company/company-5.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-     <!-- ?EasyTech Footer -->
-    <footer class="bg-dark text-white p-5">
-      <div class="text-center">
-        <h1 class="text-danger">Pro Edu</h1>
-        <p class="text-primary fs-5">Office 41, Zawaya Building, Ghala Muscat, Sultanate of Oman<br>Privacy Policy | Terms of Use</p>
+        <button class="btn btn-primary mt-3">Read More</button>
       </div>
-      <div class="d-flex justify-content-center fs-2">
-        <a href="#"><i class="fab fa-facebook text-warning"></i></a>
-        <a href="#"><i class="fab fa-twitter ps-4 text-warning"></i></a>
-        <a href="#"><i class="fab fa-instagram ps-4 text-warning"></i></a>
+    </div>
+  </div>
+</section>
+
+    <!-- ?Ready to Join -->
+    <section id="join" class="bg-primary text-white d-flex flex-column flex-md-row justify-content-evenly align-items-center m-auto mt-5 rounded p-5 ms-5 me-5">
+  <div class="p-3 text-center text-md-start">
+    <h1>Ready to join?</h1>
+    <p>
+      It is a long established fact that a reader will be distracted by
+      the readable<br />
+      content of a page when looking at its layout.
+    </p>
+  </div>
+  <div class="text-center mt-3 mt-md-0">
+   <a href="#register" class="btn btn-light fs-5 register-btn d-none d-lg-block px-3 text-dark" role="button">
+    Register
+</a>
+  </div>
+  
+</section>
+
+    <!-- ?Meet Our Successfull Students -->
+    <section class="mt-5 pt-5">
+  
+  <div class="container">
+    <div>
+    <h1>Meet Our Successful <br>Students</h1>
+    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+      at its layout.</p>
+  </div>
+    <div class="row">
+      
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+        <div class="card w-100">
+          <img src="./images/student/student-1.png" class="img-fluid" alt="Awlad Hossain">
+          <div class="card-body">
+            <h5 class="card-title">Awlad Hossain</h5>
+            <p class="card-text">UI/UX Designer</p>
+          </div>
+        </div>
       </div>
-    </footer>
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+        <div class="card w-100">
+          <img src="./images/student/student-2.png" class="img-fluid" alt="Jannatul Islam">
+          <div class="card-body">
+            <h5 class="card-title">Jannatul Islam</h5>
+            <p class="card-text">Motion Design</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+        <div class="card w-100">
+          <img src="./images/student/student-3.png" class="img-fluid" alt="Rakib Hossain">
+          <div class="card-body">
+            <h5 class="card-title">Rakib Hossain</h5>
+            <p class="card-text">Web Developer</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+        <div class="card w-100">
+          <img src="./images/student/student-4.png" class="img-fluid" alt="Nishi Akter">
+          <div class="card-body">
+            <h5 class="card-title">Nishi Akter</h5>
+            <p class="card-text">Graphic Designer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center align-items-center pt-5">
+    <button class="btn btn-primary fs-5">View All</button>
+  </div>
+</section>
+
+    <!-- ?Some Students Feedback -->
+    <section id="feedback" class="feedback-section mt-5">
+  <div class="container">
+    <h1 class="text-center">Some Students Feedback</h1>
+    <p class="text-center pb-5">It is a long established fact that a reader will be distracted by the readable
+      content of a page when looking at its layout.</p>
+    <div id="feedbackCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Page 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <!-- Feedback 1 -->
+            <div class="col-lg-5 col-md-6 col-sm-10 mb-4">
+              <div class="card p-4">
+                <div class="d-flex justify-content-between pb-4">
+                  <img class="comma" src="./images/comma.png" alt="Comma">
+                  <div>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </div>
+                </div>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                  alteration in some form, by injected humour, or randomised words which don't look even slightly
+                  believable. If you are going to use a passage of Lorem.</p>
+                <div class="d-flex pt-2 user-info">
+                  <img class="user" src="images/student/student-6.png" alt="User" class="user-img">
+                  <div class="ps-3">
+                    <h6>Shanta Akter</h6>
+                    <p>UI Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Feedback 2 -->
+            <div class="col-lg-5 col-md-6 col-sm-10 mb-4">
+              <div class="card p-4">
+                <div class="d-flex justify-content-between pb-4">
+                  <img class="comma" src="./images/comma.png" alt="Comma">
+                  <div>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </div>
+                </div>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                  alteration in some form, by injected humour, or randomised words which don't look even slightly
+                  believable. If you are going to use a passage of Lorem.</p>
+                <div class="d-flex pt-2 user-info">
+                  <img class="user" src="images/student/student-5.png" alt="User" class="user-img">
+                  <div class="ps-3">
+                    <h6>Awlad Hossain</h6>
+                    <p>UI Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Page 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <!-- Feedback 3 -->
+            <div class="col-lg-5 col-md-6 col-sm-10 mb-4">
+              <div class="card p-4">
+                <div class="d-flex justify-content-between pb-4">
+                  <img class="comma" src="./images/comma.png" alt="Comma">
+                  <div>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </div>
+                </div>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                  alteration in some form, by injected humour, or randomised words which don't look even slightly
+                  believable. If you are going to use a passage of Lorem.</p>
+                <div class="d-flex pt-2 user-info">
+                  <img class="user" src="images/student/student-6.png" alt="User" class="user-img">
+                  <div class="ps-3">
+                    <h6>Shanta Khatun</h6>
+                    <p>Web Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Feedback 4 -->
+            <div class="col-lg-5 col-md-6 col-sm-10 mb-4">
+              <div class="card p-4">
+                <div class="d-flex justify-content-between pb-4">
+                  <img class="comma" src="./images/comma.png" alt="Comma">
+                  <div>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </div>
+                </div>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                  alteration in some form, by injected humour, or randomised words which don't look even slightly
+                  believable. If you are going to use a passage of Lorem.</p>
+                <div class="d-flex pt-2 user-info">
+                  <img class="user" src="images/student/student-5.png" alt="User" class="user-img">
+                  <div class="ps-3">
+                    <h6>Jane Smith</h6>
+                    <p>Graphic Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-success rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-success rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+    <!-- ?Frequently Asked Questions -->
+    <section id="faq" class="pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pb-5 pt-5">
+            <h1>Frequently Asked Questions</h1>
+            <p class="fs-5">It is a long established fact that a reader will be distracted by the readable content of a page when
+              looking at its layout.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button fs-4" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Does my site need to be updated to HTTPS instead of HTTP?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-success fs-5">
+                    Yes!
+
+In 2018, there is no reason – no good excuse – not to upgrade any site to HTTPS by acquiring an SSL certificate. Starting in August 2018, the most popular web browser on the planet, Google Chrome, will give a big red warning to your visitors if your site is not fully secure. Firefox is already doing this, and Microsoft’s Edge and Apple’s Safari are sure to follow. So make sure you get an SSL certificate and keep it up to date. This will protect your content from being covertly altered and prevent your customers’ information from being monitored or stolen.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How long does a website redesign take?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-success fs-5">
+                    Depending on the size, complexity and, most critically, the client’s active involvement in the process, a website takes anywhere between six and 24 weeks to build and launch. Some incredibly large projects have broken the year mark
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What happens if my site breaks?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-success fs-5">
+                    We’re always here to help! We can cover emergencies and non-emergencies alike. Just be sure to give us as many details as possible about the problem: the browser you were using when you noticed the problem, your computer’s operating system, time of day, what actions you were performing, what device you were using when you saw the problem, etc.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                   How much does a new website cost?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-success fs-5">
+                    Do you think it’s possible to calculate the exact cost for website development? Website development will be fully customizable, tailoring to the client’s requirements. Nowadays, you can find many options to develop your website.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ?Register -->
+    <section id="register" class="pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h1>Register Now</h1>
+            <p>
+              It is a long established fact that a reader will be distracted
+              by the readable content of a page when looking at its layout.
+            </p>
+            <form action="">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" class="form-control" id="phone" aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="course" class="form-label">Course</label>
+                <select class="form-select" id="course">
+                  <option selected>Select Course</option>
+                  <option value="1">Web Development</option>
+                  <option value="2">Graphic Design</option>
+                  <option value="3">Digital Marketing</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 pt-5 ">
+            <img src="./images/contact.png" class="img-fluid contact" alt="..." />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ?Trusted by over 800+ companies -->
+    <section class="pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pb-3 pt-3 text-center">
+        <h1>Trusted by over 800+ companies</h1>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+          looking at its layout.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex flex-wrap justify-content-center align-items-center">
+          <img src="./images/company/company-1.png" class="img-fluid m-2" alt="Company 1" />
+          <img src="./images/company/company-2.png" class="img-fluid m-2" alt="Company 2" />
+          <img src="./images/company/company-3.png" class="img-fluid m-2" alt="Company 3" />
+          <img src="./images/company/company-4.png" class="img-fluid m-2" alt="Company 4" />
+          <img src="./images/company/company-5.png" class="img-fluid m-2" alt="Company 5" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <!-- ?EasyTech Footer -->
+  <footer class="bg-dark text-white p-5">
+    <div class="text-center">
+      <a class="navbar-brand" href="#"></a>
+        <span class="fs-4" style="font-family: 'Pacifico', cursive;">EASY <strong class="text-warning fs-4"
+            style="font-family: 'Pacifico', cursive;">Tech</strong></span </a>
+      <p class="text-primary fs-5">Office 41, Zawaya Building, Ghala Muscat, Sultanate of Oman<br>Privacy Policy | Terms
+        of Use</p>
+    </div>
+    <div class="d-flex justify-content-center fs-2">
+      <a href="#"><i class="fab fa-facebook text-white"></i></a>
+      <a href="#"><i class="fab fa-twitter ps-4 text-white"></i></a>
+      <a href="#"><i class="fab fa-instagram ps-4 text-white"></i></a>
+    </div>
+    <div class="position-fixed bottom-0 end-0 m-3">
+  <a href="#top" class="text-white bg-info fs-2 rounded-circle ps-3 pe-3 p-2">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+</div>
+    <div class="text-center pt-3">
+      
+      <p>&copy; 2021 EasyTech. All Rights Reserved</p>
+    </div>
+  </footer>
 
 
-    <!-- Bootstrap's JS Link -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Bootstrap's JS Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom JS -->
+  <script type="module" src="script.js"></script>
+</body>
+
 </html>

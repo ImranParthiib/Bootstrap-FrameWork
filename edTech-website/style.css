@@ -1,15 +1,28 @@
-main {
-  margin: 20px 100px 110px 100px;
+body {
+  font-family: "Pacifico", cursive;
+  scroll-behavior: smooth;
 }
-
-.contact {
-  width: 100%;
+header {
+  background: url("path/to/your/background-image.jpg") no-repeat center
+    center/cover;
+  color: white;
 }
-.comma {
-  width: 50px !important;
-  height: 50px !important;
+.navbar {
+  background: linear-gradient(45deg, #1e3c72, #2a5298);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.user {
-  width: 50px !important;
-  height: 50px !important;
+.navbar-nav .nav-link {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffcc00 !important;
+}
+.btn-danger {
+  background: #ff4b5c;
+  border: none;
+  transition: background 0.3s ease;
+}
+.btn-danger:hover {
+  background: #ff1e2d;
 }
